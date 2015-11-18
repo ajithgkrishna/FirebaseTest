@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/medicineImage"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img"
+            android:src="@drawable/ic_profile"
+            app:border="true"
+            app:border_color="#FFFFFFFF"
+            app:border_width="1dp"
+            app:selector="true"
+            app:selector_color="#4403a9f4"
+            app:selector_stroke_color="#aa5677fc"
+            app:selector_stroke_width="4dp"
+            app:shadow="true" >
+        </com.pkmmte.circularimageview.CircularImageView>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dip"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dip"
+                android:text="@string/name" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtUnitPrice"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:text="@string/unitprice"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:text="@string/quantity"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSubTotal"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:text="@string/subtotal"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/deletebin" />
+    </LinearLayout>
+
+</LinearLayout>

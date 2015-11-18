@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
+
+    	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtMedicineName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:padding="10dip"
+            android:layout_margin="1dip"
+            android:background="@drawable/border_back"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/Medicine" />
+
+        <TextView
+            android:id="@+id/txtMedicineDosage"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="left|center"
+             android:padding="10dip"
+             android:lines="3"
+            android:layout_margin="1dip"
+            android:background="@drawable/border_back"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/dosage" />
+
+        <TextView
+            android:id="@+id/textViewfoodPreference"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+             android:padding="10dip"
+            android:layout_margin="1dip"
+            android:background="@drawable/border_back"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="Preferenc" />
+
+        <TextView
+            android:id="@+id/txtNoOfDays"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+             android:padding="10dip"
+            android:layout_margin="1dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:background="@drawable/border_back"
+            android:text="@string/days" />
+
+        <TextView
+            android:id="@+id/txtRefill"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+             android:padding="10dip"
+              android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_margin="1dip"
+            android:background="@drawable/border_back"
+            android:text="@string/Refill" />
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/deletebin"
+            android:gravity="center"
+             android:padding="10dip"
+              android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_margin="1dip"
+            android:visibility="gone" />						
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip" >
+
+        <TextView
+            android:id="@+id/txtDialogNotes"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:text="@string/Notes"
+			 android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:layout_margin="1dip"
+            android:background="@drawable/border_back"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <!--
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtMedicineName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/border_back"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/Medicine"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtMedicineDosage"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/border_back"
+                android:gravity="center"
+                android:text="@string/dosage"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textViewfoodPreference"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_back"
+                android:gravity="center"
+                android:text="Preferenc"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+           
+            <TextView
+                android:id="@+id/txtNoOfDays"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_back"
+                android:gravity="center"
+                android:text="@string/days"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtRefill"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_back"
+                android:gravity="center"
+                android:text="@string/Refill"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtDelete"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/deletebin"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtDialogNotes"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_back"
+                android:padding="10dip"
+                android:text="@string/Notes"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/blue" />
+        </TableRow>
+    </TableLayout>
+    -->
+
+</LinearLayout>

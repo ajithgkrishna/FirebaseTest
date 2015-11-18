@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtDiagnostictype"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="2"
+            android:background="@drawable/border_back"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:padding="10dip"
+            android:singleLine="true"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/type" />
+
+        <TextView
+            android:id="@+id/txtDiagnosticTestName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="2"
+            android:background="@drawable/border_back"
+            android:gravity="left|center"
+            android:lines="2"
+            android:padding="10dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/testname" />
+
+        <TextView
+            android:id="@+id/txtDiagnosticSample"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/border_back"
+            android:gravity="left|center"
+            android:padding="10dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="Sample" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/border_back"
+            android:gravity="left|center"
+            android:padding="10dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/Values" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_margin="1dip"
+         android:background="@drawable/border_back"
+        >
+
+      
+        <TextView
+            android:id="@+id/txtDiagnosticResult"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="1"
+            android:background="@drawable/border_back"
+            android:gravity="right|center"
+            android:padding="10dip"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="Result" />
+          <EditText
+                android:id="@+id/ResultValueEnter"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginRight="10dip"
+                android:layout_margin="10dip"
+                android:padding="20dip"
+                android:background="@drawable/border_back"
+                 android:visibility="gone"
+                android:gravity="center"
+                 />
+
+            <ImageButton
+                android:id="@+id/buttonSubmitDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+               android:background="@color/blue"
+                android:src="@drawable/save"
+                 android:visibility="gone"
+                android:textColor="@android:color/white"
+             />
+           
+    </LinearLayout>
+
+</LinearLayout>

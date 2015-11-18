@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/txtMedicineName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/Medicine" />
+
+        <TextView
+            android:id="@+id/txtMedicineDosage"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/dosage" />
+        <!--
+                     <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                                                            android:id="@+id/txtMedicineDose"
+                    
+                    android:text="@string/morning" />
+        -->
+
+
+        <!--
+                     <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                                                                                android:id="@+id/txtDose"
+                    
+                    android:text="@string/AfterNoon" />
+        -->
+
+
+        <!--
+                     <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                                                                                                    android:id="@+id/txtNoOfDays"
+                    
+                    android:text="@string/Evening" />
+        -->
+        <!--
+                     <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                      android:id="@+id/txttoOfDays"
+                    android:text="@string/Night" />
+        -->
+
+        <TextView
+            android:id="@+id/txtNoOfDays"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/days" />
+
+        <TextView
+            android:id="@+id/txtRefill"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Refill" />
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/deletebin"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/txtDialogNotes"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:text="@string/Notes"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+</LinearLayout>

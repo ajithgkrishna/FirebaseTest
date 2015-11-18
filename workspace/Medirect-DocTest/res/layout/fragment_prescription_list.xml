@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/actionbar_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewPrescriptions"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/prescri_content"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/menu_prescriptions" />
+
+            <TextView
+                android:id="@+id/textViewAddPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/new_patient_background"
+                android:drawableLeft="@drawable/plus"
+                android:drawablePadding="10dip"
+                android:gravity="center"
+                android:padding="15dip"
+                android:text="@string/new_patient"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <!-- </HorizontalScrollView> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editTextAccountNo"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_back"
+                        android:ems="10"
+                        android:hint="@string/AccountNo"
+                        android:padding="10dip" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextFirstName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_back"
+                        android:ems="10"
+                        android:hint="@string/FirstName"
+                        android:inputType="textPersonName"
+                        android:padding="10dip" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextLastName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_back"
+                        android:ems="10"
+                        android:hint="@string/LastName"
+                        android:inputType="textPersonName"
+                        android:padding="10dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_back"
+                        android:ems="10"
+                        android:hint="@string/Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dip" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_back"
+                        android:ems="10"
+                        android:hint="@string/Phone"
+                        android:inputType="phone"
+                        android:padding="10dip" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textViewSearch"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_prescription_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:text="@string/Search"
+                        android:textColor="@android:color/white" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:background="@drawable/border_back"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/table_menu_bg_color"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/textViewPatientName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="10dip"
+                        android:text="@string/PatientName"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewAccNum"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:padding="10dip"
+                        android:text="@string/AccountNo"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ExpandableListView
+                    android:id="@+id/expandableListViewPrescriptionList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:groupIndicator="@null" >
+                </ExpandableListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

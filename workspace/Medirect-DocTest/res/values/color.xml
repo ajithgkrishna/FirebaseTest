@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_">#10b8e5</color>
+    <color name="menu_click">#0ba5ce</color>
+    <color name="new_patient">#10b8e5</color>
+    <color name="new_patient_click">#0ba5ce</color>
+    <color name="new_prescription">#ff7800</color>
+    <color name="new_prescription_click">#f07100</color>
+    <color name="table_menu_bg_color">#dcf5fb</color>
+    <color name="border_color">#e2e2e2</color>
+    <color name="background">#f5f5f5 </color>
+    <color name="bordergrey">#e2e2e2 </color>
+    <color name="blue">#0ba5ce </color>
+    <color name="wholetextcolor">#2a2a2a</color>
+    <color name="exp_list_group_color">#f6dcc5</color>
+    <color name="from_col">#E1F2F7</color>
+    <color name="to_col">#EFEFEF</color>
+<color name="message_devider">#DCDCDC</color>
+</resources>

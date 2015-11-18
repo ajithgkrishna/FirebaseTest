@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/border_back"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+	 <com.pkmmte.circularimageview.CircularImageView
+            android:id="@+id/pic"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/img"
+            app:border="true"
+            app:border_color="#FFFFFFFF"
+            app:border_width="1dp"
+            app:selector="true"
+            app:selector_color="#4403a9f4"
+            app:selector_stroke_color="#aa5677fc"
+            app:selector_stroke_width="4dp"
+            app:shadow="true" />
+	  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/patientname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/PatientName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13-08-2015 : 12:00:00 PM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/wholetextcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp" >
+
+        <!--
+             <TextView
+            android:id="@+id/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/new_prescription_click" />
+        -->
+
+
+        <!--
+             <TextView
+            android:id="@+id/textVie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":" />
+        -->
+
+        <TextView
+            android:id="@+id/textViewmessagecontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hello ..How are you?..," />
+
+        <TextView
+            android:id="@+id/textViewNoofUnreadMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/new_prescription_click"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
