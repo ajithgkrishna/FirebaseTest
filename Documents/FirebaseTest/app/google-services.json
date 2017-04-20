@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "442093052220",
+    "firebase_url": "https://fir-test-a31be.firebaseio.com",
+    "project_id": "fir-test-a31be",
+    "storage_bucket": "fir-test-a31be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442093052220:android:f6a1223e047f9f97",
+        "android_client_info": {
+          "package_name": "com.example.mobtecnica.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442093052220-jd2i7jme2cuc5t4s4efqjdbq4kq87eqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMZhBKnrgCFwKfDa2EZJg077qJ8Ev1bh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
