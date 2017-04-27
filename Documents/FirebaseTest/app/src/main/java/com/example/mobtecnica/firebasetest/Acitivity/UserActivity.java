@@ -3,12 +3,12 @@ package com.example.mobtecnica.firebasetest.Acitivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mobtecnica.firebasetest.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -49,14 +49,13 @@ public class UserActivity extends AppCompatActivity {
         signOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(linearLayout, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
                 signOutButton();
             }
         });
     }
 
     public void signOutButton() {
+        Toast.makeText(getApplicationContext(), "User Logout", Toast.LENGTH_LONG).show();
         auth.signOut();
     }
 

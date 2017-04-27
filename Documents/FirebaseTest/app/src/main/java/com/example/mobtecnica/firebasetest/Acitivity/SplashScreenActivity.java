@@ -11,7 +11,7 @@ import com.example.mobtecnica.firebasetest.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
     private String TAG = "SplashScreen";
-    private long delayMillis = 5000;
+    private long delayMillis = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
