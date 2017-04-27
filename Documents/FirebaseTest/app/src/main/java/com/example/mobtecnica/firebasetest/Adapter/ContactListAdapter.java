@@ -94,6 +94,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         public void onClick(View v) {
             Log.d("RecyclerView", "CLICK!");
             contactClickListener.onClicked(getAdapterPosition(), v);
+            ;
         }
     }
 }
